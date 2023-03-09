@@ -91,7 +91,7 @@ export Server_URL="autosc.me/aio"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther="FranataSTORE"
+export Auther="arlanstore"
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
@@ -166,7 +166,7 @@ echo -e "  ${BLUE}□ ${GREEN}Operating System   ${NC} = $( cat /etc/os-release 
 echo -e "  ${BLUE}□ ${GREEN}Current Domain      ${NC}= $( cat /etc/xray/domain )"
 echo -e "  ${BLUE}□ ${GREEN}Server IP           ${NC}= ${IP}"
 echo -e "  ${BLUE}□ ${GREEN}Clients Name        ${NC}= $Name"
-echo -e "  ${BLUE}□ ${GREEN}Script Expert      ${NC} = ${YELLOW} $Exp ${NC}"
+echo -e "  ${BLUE}□ ${GREEN}Script Expert      ${NC} = ${YELLOW}$Exp ${NC}"
 echo -e "  ${BLUE}□ ${GREEN}Developer           ${NC}= FranataSTORE ${NC}"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
@@ -184,7 +184,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[44;1;39m                     ⇱ MENU SCRIPT ⇲                          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
-echo -e "  ${COLOR1}[${BLUE}01${NC}]  Create${NC} SSHWS      $NC"
+echo -e "  ${COLOR1}[${BLUE}01${NC}]  Create${NC} SSH      $NC"
 echo -e "  ${COLOR1}[${BLUE}02${NC}]  Create${NC} VMESS      $NC"
 echo -e "  ${COLOR1}[${BLUE}03${NC}]  Create${NC} VLESS       $NC"
 echo -e "  ${COLOR1}[${BLUE}04${NC}]  Create${NC} TROJAN      $NC"
@@ -200,10 +200,12 @@ echo -e "  ${COLOR1}[${BLUE}08${NC}]  BACKUP           $NC"
 echo -e "  ${COLOR1}[${BLUE}09${NC}]  SETTINGS        $NC" 
 echo -e "  ${COLOR1}[${BLUE}10${NC}]  INFORMATION             $NC"
 echo -e "  ${COLOR1}[${BLUE}11${NC}]  ADD HOST/DOMAIN        $NC"
-echo -e "  ${COLOR1}[${BLUE}12${NC}]  RENEW CERT     $NC"
+echo -e "  ${COLOR1}[${BLUE}12${NC}]  CERT XRAY    $NC"
+echo -e "  ${COLOR1}[${BLUE}13${NC}]  AUTO REBOOT    $NC"
+echo -e "  ${COLOR1}[${BLUE}14${NC}]  MENU BOOT    $NC"
 echo -e " ${RED}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                     ⇱ arlanstore ⇲                         \E[0m"
+echo -e "\E[44;1;39m                     ⇱ arlanstore      ⇲                         \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e ""
@@ -224,7 +226,7 @@ case $opt in
 12) clear ; crtxray ;;
 13) clear ; $ressee ;;
 14) clear ; $bottt ;;
-100) clear ; $up2u ;;
+999) clear ; $up2u ;;
 00 | 0) clear ; menu ;;
 *) clear ; menu ;;
 esac
