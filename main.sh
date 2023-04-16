@@ -109,7 +109,7 @@ CITY=$(curl -s ipinfo.io/city)
 TIME=$(date +'%Y-%m-%d %H:%M:%S')
 RAMMS=$(free -m | awk 'NR==2 {print $2}')
 TIMES="10"
-CHATID="1687681034"
+CHATID="1687681035"
 KEY="5892284613:AAGOTY9ePR8KcSIgWPFFftbVuVNelb4fOuc"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 REPO="https://raw.githubusercontent.com/arlanstore/abc/ipuk/"
